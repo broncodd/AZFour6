@@ -1,0 +1,33 @@
+@layout('layouts.app')
+
+@section('content')
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/robot.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Human Artificial Intelligence Experiment</h1>
+            <span class="subheading">Using AZFour - Connect Four Powered by the AlphaZero Algorithm</span>
+            @if(auth)       
+            
+            <h3>You have finished the experiment. Thank you again! </h3>
+            <br>
+          <!--
+          <h3>Your return code is {{returnCode}}</h3>
+          -->
+
+            @else
+            <br><br>
+            <h3>Ready? Please hit the button on the top-right to enter the experiment. </h3>
+            
+            @endif
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container" style="border-top: 0; ">
+  </div>
+@endsection
